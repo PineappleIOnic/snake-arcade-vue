@@ -1,7 +1,7 @@
 # ![Logo](https://user-images.githubusercontent.com/63467479/165770488-06adc70b-e1c2-4be4-b151-27f276143849.svg) Snake Arcade 
 
 
-![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![React](https://img.shields.io/badge/vue-%252320232a.svg?style=for-the-badge&logo=vue.js&logoColor=%252361DAFB)
 ![Appwrite](https://user-images.githubusercontent.com/63467479/164336754-ffffb848-85ec-4229-a24f-36b1e0c294ca.svg)
 ![DigitalOcean](https://img.shields.io/badge/DigitalOcean-%230167ff.svg?style=for-the-badge&logo=digitalOcean&logoColor=white)
 
@@ -12,7 +12,7 @@ Snake arcade is a retro themed spinoff of the popular Nokia snake game. Play now
 
 Link: https://snake-arcade-bck7y.ondigitalocean.app/
 
-### `npm start`
+### `npm run serve`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.

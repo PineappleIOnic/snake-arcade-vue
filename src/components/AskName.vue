@@ -1,3 +1,29 @@
+<template>
+  <div className="askName">
+    <h1>Enter your name</h1>
+    <div className="subcon">
+      <input type='text' v-on:change="createPlayer" />
+      <div className="save-btn" v-on:click="createPlayer">Save</div>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+    data() {
+        return {
+            playerName: '',
+        }
+    },
+    methods: {
+      async createPlayer() {
+        this.$emit('create-player', this.playerName);
+      },
+    },
+};
+</script>
+
+<style>
 .askName{
     box-sizing: border-box;
     height: 500px;
@@ -39,7 +65,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    cursor: url("../../assets/hand_cur.png"), auto;
+    cursor: url("../assets/hand_cur.png"), auto;
 }
 
 .askName .subcon{
@@ -85,3 +111,4 @@
         height: 35px;
     }
 }
+</style>

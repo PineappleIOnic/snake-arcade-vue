@@ -1,3 +1,22 @@
+<template>
+  <div className="food" :style="{left: `${foodPos[0]}%`, top: `${foodPos[1]}%`}">
+    <img :src="food" alt="food" />
+  </div>
+</template>
+
+<script>
+import food from '../assets/apple.png';
+export default {
+    props: ['foodPos'],
+    data: function() {
+        return {
+            food: food,
+        }
+    }
+};
+</script>
+
+<style>
 .food{
     position: absolute;
     width: 4%;
@@ -30,3 +49,4 @@
         height: 100%;
     }
 } */
+</style>
