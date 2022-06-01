@@ -2,7 +2,7 @@
   <div className="askName">
     <h1>Enter your name</h1>
     <div className="subcon">
-      <input type='text' v-on:change="createPlayer" />
+      <input type='text' v-model="playerName" />
       <div className="save-btn" v-on:click="createPlayer">Save</div>
     </div>
   </div>

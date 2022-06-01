@@ -169,6 +169,7 @@ export default {
       }
     },
     async createPlayer(name) {
+      await api.account.deleteSession("current");
       this.score = 0;
       this.gameOver = false;
       localStorage.removeItem("cookieFallback");
@@ -310,6 +311,15 @@ export default {
     this.gameplayMusic.volume = 0.3;
 
     document.addEventListener("keydown", this.handleKeyPress.bind(this));
+
+    // Grab user data
+    api.account.get("current").then((res) => {
+      if (res) {
+        localStorage.setItem("userId", res["$id"]);
+        localStorage.setItem("player", res.name);
+        this.player = res.name;
+      }
+    });
   },
 };
 </script>
